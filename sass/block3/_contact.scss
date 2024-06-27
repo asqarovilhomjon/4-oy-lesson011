@@ -1,0 +1,148 @@
+.contact {
+    width: 100%;
+    background: #014e56;
+    padding: 20px 0 100px 0;
+    .contact__wrapper {
+      width: 100%;
+      display: flex;
+      .contact__content {
+        width: 50%;
+        // background: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        .contact__bigtitle {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          p:nth-child(1) {
+            font-size: 64px;
+            font-weight: 700;
+            color: #fff;
+          }
+          p:nth-child(2) {
+            font-size: 32px;
+            font-weight: 700;
+            color: #f67e7e;
+          }
+        }
+        .contact__block {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          .contact__card {
+            width: 100%;
+            display: flex;
+            gap: 23px;
+            align-items: center;
+            .contact__img {
+              width: 15%;
+            }
+            .contact__title {
+              width: 75%;
+              p {
+                font-size: 18px;
+                font-weight: 700;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .contact__write {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .contact__inp {
+          width: 100%;
+          background: transparent;
+        }
+        .contact__inp:nth-child(1) {
+          height: 42px;
+          border: none;
+          border-bottom: 1px solid #fff;
+          outline: none;
+          padding-left: 5px;
+          color: #fff;
+        }
+        .contact__inp:nth-child(2) {
+          height: 42px;
+          border: none;
+          border-bottom: 1px solid #fff;
+          outline: none;
+          padding-left: 5px;
+          color: #fff;
+        }
+        .contact__inp:nth-child(3) {
+          height: 42px;
+          border: none;
+          border-bottom: 1px solid #fff;
+          outline: none;
+          padding-left: 5px;
+          color: #fff;
+        }
+        .contact__inp:nth-child(4) {
+          height: 42px;
+          outline: none;
+          border: none;
+          padding-left: 5px;
+          color: #fff;
+          border-bottom: 1px solid #fff;
+        }
+        .contact__btn {
+          width: 123px;
+          height: 48px;
+          border-radius: 30px;
+          border: none;
+          font-weight: 600;
+          color: #004047;
+          transition: .2s;
+          &:hover{
+              cursor: pointer;
+              background: 
+              #79C8C7;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  @media(max-width:950px){
+      .contact{
+          padding: 0;
+          .contact__wrapper{
+              flex-direction: column;
+              gap: 50px;
+              padding: 0 20px;
+              .contact__content{
+                  width: 100%;
+                  .contact__bigtitle{
+                      width: 100%;
+                      align-items: center;
+                  }
+                  .contact__block{
+                      width: 100%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      .contact__card{
+                          width: 100%;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          gap: 40px;
+                          // background: #fff;
+  
+                      }
+                  }
+              }
+              .contact__write{
+                  width: 100%;
+              }
+          }
+      }
+  }

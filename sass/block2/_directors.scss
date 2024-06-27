@@ -1,0 +1,131 @@
+.directors {
+    width: 100%;
+    padding: 140px 165px;
+    background: #004047;
+    .directors__wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+      .directors__suptitle {
+        width: 100%;
+        text-align: center;
+        p {
+          font-size: 48px;
+          font-weight: 700;
+          color: #fff;
+        }
+      }
+      .directors__block {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        .directors__card {
+          min-width: 30%;
+          padding: 32px 24px;
+          background: #012f34;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+          .directors__img {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            img {
+              width: 64px;
+              height: 64px;
+            }
+          }
+          .directors__name {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+            p:nth-child(1) {
+              font-size: 18px;
+              color: #79c8c7;
+              font-weight: 700;
+            }
+            p:nth-child(2) {
+              font-size: 13px;
+              color: #fff;
+            }
+          }
+          .directors__btn {
+            width: 100%;
+            display: flex;
+            position: relative;
+            button {
+              position: absolute;
+              bottom: -60px;
+              left: 50%;
+              translate: (-50%);
+              width: 56px;
+              height: 56px;
+              border-radius: 50%;
+              border: none;
+              background: #f67e7e;
+              font-size: 34px;
+              font-weight: 700;
+              color: #012f34;
+              transition: .2s;
+              &:hover{
+                  cursor: pointer;
+                  background: #79C8C7;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 1080px) {
+    .directors {
+      padding: 100px 98px;
+      display: flex;
+      justify-content: center;
+      .directors__wrapper {
+        width: 100%;
+        .directors__suptitle {
+          p {
+            font-size: 32px;
+          }
+        }
+        .directors__block {
+          .directors__card {
+            width: 46%;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .directors {
+      padding: 88px 24px;
+      display: flex;
+      justify-content: center;
+      .directors__wrapper {
+        width: 100%;
+        border: 1px solid red;
+  
+        .directors__suptitle {
+          p {
+            font-size: 32px;
+          }
+        }
+        .directors__block {
+          width: 100%;
+          border: 1px solid red;
+          justify-content: center;
+          .directors__card {
+            min-width: 100%;
+          }
+        }
+      }
+    }
+  }
+  

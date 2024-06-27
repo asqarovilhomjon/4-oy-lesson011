@@ -1,0 +1,130 @@
+.deliver {
+    width: 100%;
+    background: #004047;
+    padding: 140px 254px;
+    .deliver__wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 56px;
+      margin: auto;
+      .deliver__block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .deliver__card {
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          gap: 28px;
+          align-items: center;
+          .deliver__text {
+            width: 100%;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // text-align: center;
+            p {
+              max-width: 350px;
+              font-size: 15px;
+              line-height: 25px;
+              font-weight: 600;
+              color: #fff;
+              text-align: center;
+            }
+          }
+          .deliver__name {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            text-align: center;
+            width: 100%;
+            p:nth-child(1) {
+              color: #79c8c7;
+              font-weight: 700;
+            }
+            p:nth-child(2) {
+              color: #fff;
+              font-size: 13px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+      .deliver__subtitle {
+        width: 100%;
+        p {
+          font-size: 48px;
+          line-height: 48px;
+          font-weight: 700;
+          color: #FFFFFF;
+          max-width: 950px;
+          text-align: center;
+          span {
+            color: #79c8c7;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .deliver {
+      padding: 100px 47px;
+      .deliver__wrapper {
+        .deliver__subtitle{
+          display: flex;
+          justify-content: center;
+          p{
+            max-width: 700px;
+            font-size: 32px;
+          }
+        }
+        .deliver__block {
+          flex-direction: column;
+          gap: 48px;
+          .deliver__card {
+            width: 100%;
+            .deliver__text{
+              display: flex;
+              justify-content: center;
+              p{
+                max-width: 700px;
+                width: 100%;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .deliver {
+      padding: 100px 10px;
+      .deliver__wrapper {
+        .deliver__subtitle{
+  p{
+    max-width: 700px;
+    font-size: 32px;
+  }
+        }
+        .deliver__block {
+          flex-direction: column;
+          gap: 48px;
+          .deliver__card {
+            width: 100%;
+            .deliver__text{
+              p{
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
