@@ -2,10 +2,12 @@
     width: 100%;
     background: #014e56;
     padding-bottom: 250px;
-    .hero__wrapper {
+    .hero2__wrapper {
       width: 100%;
       display: flex;
-      .hero__bigtitle {
+      justify-content: space-between;
+      gap: 150px;
+      .hero2__subtitle {
         width: 25%;
         p {
           font-weight: 700;
@@ -16,10 +18,22 @@
           }
         }
       }
-      .hero__smalltitle {
+      .hero2__context{
         width: 75%;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+      }
+      .hero2__vector{
+        width: 50px;
+        height: 4px;
+        background: #F67E7E;
+      }
+      .hero2__title {
+        display: flex;
+        // justify-content: center;
+        max-width: 700px;
 
         p{
           font-weight: 600;
@@ -33,10 +47,10 @@
   
   @media(max-width:1050px){
       .hero2{
-          .hero__wrapper{
+          .hero2__wrapper{
               flex-direction: column;
               gap: 30px;
-              .hero__bigtitle{
+              .hero2__subtitle{
                   width: 100%;
                   p{
                       text-align: center;
@@ -45,10 +59,18 @@
                       max-width: 350px;
                   }
               }
-                .hero__smalltitle{
-                  width: 100%;
+              .hero2__context{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              .hero2__vector{
+                display: none;
+              }
+                .hero2__title{
                   p{
-                      max-width: 500px;
+                      max-width: 600px;
                       text-align: center;
                   }
                 }
@@ -57,10 +79,10 @@
   }
   @media(max-width: 370px){
       .hero2{
-          .hero__wrapper{
+          .hero2__wrapper{
               flex-direction: column;
               gap: 30px;
-              .hero__bigtitle{
+              .hero2__subtitle{
                   width: 100%;
                   p{
                       text-align: center;

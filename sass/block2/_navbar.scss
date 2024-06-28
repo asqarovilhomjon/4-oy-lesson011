@@ -10,10 +10,15 @@
             display: flex;
             gap: 50px;
             align-items: center;
-                p{
-                    font-weight: 600;
-                    color: #fff;
+            span{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                color: #FFFFFF;
+                &:hover{
+                    color: rgb(235, 162, 24);
                 }
+            }
         }
         .navbar__btn{
             display: flex;
@@ -21,69 +26,19 @@
             i{
                 display: none;
                 font-size: 24px;
-                color: #fff;
-                .navbar__burger{
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    width: 70%;
-                    background: #fff;
-                    height: 90vh;
-                    background: #2C6269;
-                    display: none;
-                    .navbar__collection{
-                        display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-                        padding: 20px;
-                        button{
-                            width: 153px;
-                            height: 48px;
-                            border-radius: 50px;
-                            background: transparent;
-                            border: 1px solid #fff;
-                            color: #fff;
-                            transition: .2s;
-                            &:hover{
-                                cursor: pointer;
-                                background: #fff;
-                                color: #014E56;
-                            }
-                            &:active{
-                                transform: scale(.9);
-                            }
-                        }
-                        i{
-                            text-align: end;
-                            color: #fff;
-                            &:hover{
-                                cursor: pointer;
-                            }
-                        }
-                        li{
-                            font-weight: 600;
-                            color: #fff;
-                        }
-                    }
-                }
-
-
-
-
-
-
-
-
+                color: #FFFFFF;
                 &:hover{
                     cursor: pointer;
-                   
                 }
             }
-            i:active{
-                .navbar__burger{
-                    display: block;
-                    
-                }
+            a{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                color: #FFFFFF;
+                &:hover{
+                    color: rgb(235, 162, 24);
+                }  
             }
             button{
                 width: 153px;
@@ -92,7 +47,7 @@
                 background: transparent;
                 border: 1px solid #fff;
                 color: #fff;
-                transition: .2s;
+                transition: .5s;
                 &:hover{
                     cursor: pointer;
                     background: #fff;
@@ -113,7 +68,7 @@
     .navbar{
         .navbar__wrapper{
             .navbar__content{
-                p{
+                span{
                     display: none;
                 }
             }
@@ -122,7 +77,7 @@
                     display: block;
                 }
                 button{
-                    display: none;
+                    display: block;
                 }
             }
         }

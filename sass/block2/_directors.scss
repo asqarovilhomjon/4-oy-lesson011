@@ -12,8 +12,9 @@
         text-align: center;
         p {
           font-size: 48px;
-          font-weight: 700;
-          color: #fff;
+          line-height: 48px;
+          font-weight: 900;
+          color: #FFFFFF;
         }
       }
       .directors__block {
@@ -59,7 +60,11 @@
             position: relative;
             button {
               position: absolute;
-              bottom: -60px;
+              text-align: center;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              // bottom: -60px;
               left: 50%;
               translate: (-50%);
               width: 56px;
@@ -70,10 +75,12 @@
               font-size: 34px;
               font-weight: 700;
               color: #012f34;
-              transition: .2s;
+              transition: .5s;
               &:hover{
                   cursor: pointer;
                   background: #79C8C7;
+                  transform: scale(.9);
+                  
               }
             }
           }
@@ -110,7 +117,6 @@
       justify-content: center;
       .directors__wrapper {
         width: 100%;
-        border: 1px solid red;
   
         .directors__suptitle {
           p {
@@ -119,7 +125,6 @@
         }
         .directors__block {
           width: 100%;
-          border: 1px solid red;
           justify-content: center;
           .directors__card {
             min-width: 100%;
