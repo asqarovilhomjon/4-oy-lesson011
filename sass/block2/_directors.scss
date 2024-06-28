@@ -53,6 +53,17 @@
               font-size: 13px;
               color: #fff;
             }
+            .name__text{
+              max-width: 230px;
+              text-align: center;
+              font-size: 15px;
+              line-height: 25px;
+              font-weight: 600;
+            }
+            .name__social{
+              display: flex;
+              gap: 10px;
+            }
           }
           .directors__btn {
             width: 100%;
@@ -79,8 +90,12 @@
               &:hover{
                   cursor: pointer;
                   background: #79C8C7;
-                  transform: scale(.9);
-                  
+                  transform: scale(1.03);                  
+              }
+              &:active{
+                transform: scale(.9);
+                background: #4f8282;
+
               }
             }
           }
