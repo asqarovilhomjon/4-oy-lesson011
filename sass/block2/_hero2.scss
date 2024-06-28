@@ -6,7 +6,8 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
-      gap: 150px;
+      gap: 190px;
+      padding-top: 90px;
       .hero2__subtitle {
         width: 25%;
         p {
@@ -36,6 +37,8 @@
         max-width: 700px;
 
         p{
+          font-size: 18px;
+          line-height: 28px;
           font-weight: 600;
           color: #fff;
           max-width: 650px;
