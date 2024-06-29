@@ -63,21 +63,33 @@
 
 
 
-
 @media(max-width:700px){
     .navbar{
         .navbar__wrapper{
             .navbar__content{
-                span{
+                p{
                     display: none;
                 }
             }
             .navbar__btn{
-                i{
-                    display: block;
+                .navbar__burger{
+                    display: flex;
                 }
-                button{
-                    display: block;
+                .navbar__collection{
+                    display: flex;
+                    i{
+                        display: none;
+                    }
+                    button{
+                        display: none;
+                    }
+                }
+                i{
+                    display: flex;
+                    
+                }
+                a{
+                    display: none;
                 }
             }
         }
